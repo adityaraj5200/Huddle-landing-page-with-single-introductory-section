@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body{
+    background: url(/images/bg-desktop.svg);
+    background-color: var(--Violet);
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.container{
+    padding: 40px;
+}
+
+.content{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.window-content img{
+    width: 100%;
+    
+}
+
+.text-content{
+    color: white;
+    padding: 50px;
+}
+
+.text-content h1{
+    font-size: 2.7em;
+    margin-bottom: 20px;
+}
+
+.text-content p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn{
+    width: 210px;
+    height: 60px;
+    border-width: 0px;
+    font-size: 20px;
+    border-radius: 30px;
+    color: var(--Violet);
+    background-color: white;
+    transition: color 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn:hover{
+    color: white;
+    background-color: var(--Soft-Magenta);
+}
+
+.social-media{
+    text-align: right;
+}
+
+.social-media-icons{
+    color: white;
+    border: 2px solid white;
+    padding: 12px;
+    border-radius: 50px;
+    margin-left: 10px;
+    transition: color 0.3s, border 0.3s;
+}
+
+
+.fa-facebook-f{
+    padding: 12px 15px;
+}
+
+.fa-facebook-f:hover{
+    color: #4267B2;
+    border: 2px solid #4267B2;
+}
+
+.fa-twitter:hover{
+    color: #00acee;
+    border: 2px solid #00acee;
+}
+
+.fa-instagram:hover{
+    color: #8a3ab9;
+    border: 2px solid #8a3ab9;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .logo img{
+        width: 50%;
+    }
+    
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    
+    .window-content img {
+        width: 100%;
+        padding-bottom: 60px;
+    }
+    
+    .text-content{
+        padding: 0;
+        text-align: center;
+
+    }
+
+    .text-content h1 {
+        font-size: 26px;
+    }
+    
+    .text-content p {
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 210px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .social-media{
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .social-media-icons {
+        margin-top: 50px;
+        padding: 6px;
+    }
+
+
+    .fa-facebook-f {
+        padding: 6px 9px;
+    }
+}
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
